@@ -1,0 +1,30 @@
+{
+  "name": "tailwind_html_boilerplate",
+  "version": "1.0.0",
+  "repository": "git@github.com:neuroplasticity9/tailwind_html_boilerplate.git",
+  "author": "KOTOC",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "browser-sync": "^2.27.7",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "laravel-mix": "^6.0.39",
+    "postcss": "^8.4.5",
+    "postcss-loader": "^6.2.1",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.45.1",
+    "sass-loader": "^12.1.0",
+    "tailwindcss": "^3.0.8",
+    "webpack-dev-server": "^4.7.2"
+  }
+}
