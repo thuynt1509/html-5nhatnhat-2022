@@ -1,0 +1,83 @@
+.box-support-fixbottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 120px;
+  right: 0px;
+}
+.box-support-fixbottom a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.box-support-fixbottom a .name {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  margin-top: 8px;
+}
+.box-support-fixbottom .btn-register .icon-register {
+  display: block;
+  background: url("../images/img-longform/icon-note.png") 0/100% no-repeat;
+  width: 54px;
+  height: 53px;
+}
+.box-support-fixbottom .btn-register .name {
+  color: #2D38B3;
+}
+.box-support-fixbottom .btn-zalo .icon-zalo {
+  display: block;
+  background: url("../images/img-longform/icon-zalo.png") 0/100% no-repeat;
+  width: 50px;
+  height: 50px;
+}
+.box-support-fixbottom .btn-zalo .name {
+  color: #005be0;
+}
+.box-support-fixbottom .btn-support .icon-mess {
+  display: block;
+  background: url("../images/img-longform/icon-mess.png") 0/100% no-repeat;
+  width: 51px;
+  height: 51px;
+}
+.box-support-fixbottom .btn-support .name {
+  color: #0095FF;
+}
+.box-support-fixbottom .btn-hotline .icon-hotline {
+  display: block;
+  background: url("../images/img-longform/icon-hotline.png") 0/100% no-repeat;
+  width: 62px;
+  height: 62px;
+  -webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+          animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+  position: relative;
+}
+.box-support-fixbottom .btn-hotline .icon-hotline::before {
+  display: block;
+  content: "";
+  width: 80px;
+  height: 80px;
+  top: -9px;
+  left: -9px;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 100%;
+  border: 2px solid #e60808;
+  -webkit-animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+          animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+  transition: all 0.5s;
+  transform-origin: 50% 50%;
+  opacity: 0.5;
+}
+.box-support-fixbottom .btn-hotline .name {
+  color: #FF0000;
+  font-size: 20px;
+  text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .box-support-fixbottom {
+    display: none;
+  }
+}

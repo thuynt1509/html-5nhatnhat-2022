@@ -40,16 +40,13 @@ mix.webpackConfig({
 
 mix
     .js('./src/app.js', './docs/assets/main.js')
-    // .sass('./src/css/app.scss', './docs/css/')
     .sass('./src/main.scss', './docs/assets/')
-    .sass('./src/style-longform-nn6.scss', './docs/assets/')
-    .sass('./src/button-support-page.scss', './docs/assets/')
+    .sass('./src/css/style-order.scss', './docs/assets/css')
+    .sass('./src/css/style-main-2022.scss', './docs/assets/css')
     .options({
         processCssUrls: false,
         postCss: [tailwindcss('./tailwind.config.js')],
     })
     .copy('./src/app.html', './docs/index.html')
-    .copy('./src/longform-nn6.html', './docs/longform-nn6.html')
-    .copy('./src/video.html', './docs/')
     .copyDirectory('./src/js','./docs/js')
     .copyDirectory('./src/font','./docs/font');

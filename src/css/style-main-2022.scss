@@ -1,0 +1,95 @@
+.px-10{
+    padding: 0 10px!important;
+}
+.link-view-more{
+    display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2e3092;
+            background-color: white;
+            border-radius: 4px;
+            border: 1px solid #2e3092;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 600;
+            height: 36px;
+            padding: 0 15px;
+            width: 120px;
+}
+// update gio hang
+.modal.modal-resgal{
+    overflow: hidden!important;
+    .modal-dialog{
+        pointer-events: all;
+    }
+}
+.modal-info-user{
+    background-color: #2e3092;
+    width: 440px;
+    max-width: 100%;
+    margin: 0 auto;
+    .close{
+        background: url("../images/btn-close.svg") 0/100% no-repeat;
+        width: 18px;
+        height: 18px;
+        opacity: 1;
+        margin: 6px;
+        cursor: pointer;
+        span{
+            display: none;
+        }
+    }
+    .title{
+        color: #fff;
+        font-size: 18px;
+        line-height: 1.6;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .form-support-user{
+        width: 320px;
+        margin: 0 auto;
+        padding: 25px 0;
+        .form-group{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input{
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            font-size: 16px;
+            padding: 0 20px;
+            border: none;
+            &:focus{
+                outline: none;
+            }
+        }
+        button{
+            color: #fff;
+            text-decoration: none;
+            font-size: 22px;
+            background: #ffb34a;
+            border-radius: 5px;
+            line-height: 45px;
+            font-weight: bold;
+            -webkit-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            padding: 0 10px;
+            border: none;
+        }
+        .error{
+            font-size: 14px;
+        }
+    }
+    @media only screen and (max-width:413px) {
+        .logo{
+            margin-left: 15px;
+        }
+        .title{
+            padding: 0 15px;
+            font-size: 16px;
+        }
+    }
+}
