@@ -1,21 +1,6 @@
 .px-10{
     padding: 0 10px!important;
 }
-.link-view-more{
-    display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #2e3092;
-            background-color: white;
-            border-radius: 4px;
-            border: 1px solid #2e3092;
-            font-size: 14px;
-            line-height: 20px;
-            font-weight: 600;
-            height: 36px;
-            padding: 0 15px;
-            width: 120px;
-}
 // update gio hang
 .modal.modal-resgal{
     overflow: hidden!important;
@@ -91,5 +76,19 @@
             padding: 0 15px;
             font-size: 16px;
         }
+    }
+}
+// yba online
+.btn-mualai{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 20px;
+    background-color: #ffb34a;
+    color: #fff;
+    border-radius: 10px;
+    &:hover{
+        color: #fff;
     }
 }
