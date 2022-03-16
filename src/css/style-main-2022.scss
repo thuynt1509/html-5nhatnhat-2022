@@ -278,11 +278,12 @@
         justify-content: center;
         background-color: #2e3092;
         border-radius: 50%;
-        width: 53px;
-        height: 53px;
+        width: 60px;
+        height: 60px;
         margin-bottom: 10px;
         text-indent: -9999em;
         position: relative;
+        font-size: 0;
     }
     .icon-hotline{
         i{
@@ -333,8 +334,8 @@
             content: '';
             display: block;
             background: url("../images/icon-zalo-bottom.png") 0/100% no-repeat;
-            width: 80%;
-            height: 80%;
+            width: 53px;
+            height: 53px;
         }
     }
     .icon-chat{
