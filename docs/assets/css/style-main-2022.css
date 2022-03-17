@@ -293,7 +293,7 @@
   position: fixed;
   z-index: 10;
   bottom: 50px;
-  right: 5px;
+  right: 25px;
   display: flex;
   flex-direction: column;
 }
@@ -301,7 +301,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2e3092;
+  background-color: #0A7CFF;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -309,6 +309,10 @@
   text-indent: -9999em;
   position: relative;
   font-size: 0;
+}
+.box-support-hotline .icon-hotline {
+  background-color: #e60808;
+  order: 4;
 }
 .box-support-hotline .icon-hotline i {
   display: block;
@@ -326,7 +330,7 @@
   right: 0;
   bottom: 0;
   border-radius: 50%;
-  border: solid 1px rgba(4, 91, 165, 0.6);
+  border: solid 1px #e6080899;
   -webkit-animation-name: zoomin;
   animation-name: zoomin;
   -webkit-animation-duration: 1.5s;
@@ -342,7 +346,7 @@
   right: -10px;
   bottom: -10px;
   border-radius: 50%;
-  background: rgba(4, 91, 165, 0.8);
+  background: #e60808cc;
   z-index: -1;
   -webkit-animation-name: zoomout;
   animation-name: zoomout;
@@ -353,6 +357,9 @@
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
 }
+.box-support-hotline .icon-zalo {
+  order: 2;
+}
 .box-support-hotline .icon-zalo::before {
   content: "";
   display: block;
@@ -360,12 +367,18 @@
   width: 53px;
   height: 53px;
 }
+.box-support-hotline .icon-chat {
+  order: 3;
+}
 .box-support-hotline .icon-chat::before {
   content: "";
   display: block;
   background: url("../images/icon-fb-bottom.png") 0/100% no-repeat;
   width: 80%;
   height: 80%;
+}
+.box-support-hotline .icon-product {
+  order: 1;
 }
 .box-support-hotline .icon-product::before {
   content: "";
@@ -377,10 +390,22 @@
 @media only screen and (max-width: 767px) {
   .box-support-hotline {
     flex-direction: row-reverse;
-    width: 100%;
-    right: 0;
+    width: calc(100% - 48px);
+    right: 24px;
     bottom: 0;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+  .box-support-hotline .icon-chat {
+    order: 1;
+  }
+  .box-support-hotline .icon-zalo {
+    order: 2;
+  }
+  .box-support-hotline .icon-product {
+    order: 3;
+  }
+  .box-support-hotline .icon-hotline {
+    order: 4;
   }
 }
 
